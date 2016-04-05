@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 Django (1.7.1)
 pip (1.5.4)
 setuptools (20.4)
+=======
+Django==1.7.1
+django-configurations==1.0
+>>>>>>> f7544b077d305be9d45ff1551ad65dd9172111dd
