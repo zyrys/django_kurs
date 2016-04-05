@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+    <ul>
+{% for author in object_list %}
+    <li><a href="{% url 'shelf:author-detail' author.id %}" >{{ forloop.counter }} {{ author.first_name }} {{ author.last_name }}</a></li>
+    {% endfor %}
+{% endblock %}
+
+</ul>
+
+<!---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>to jest to</title>
+</head>
+<body>
+
+</body>
+</html>
+-->
