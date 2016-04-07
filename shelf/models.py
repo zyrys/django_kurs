@@ -19,8 +19,12 @@ class Publisher(models.Model):
 class Book(models.Model):
 
     title = models.CharField(max_length=100)
-    author = models.ForeignKey(Author)
+    authors = models.ManyToManyField(Author)
+    # author = models.ForeignKey(Author)
     isbn = models.CharField(max_length=17)
     publisher = models.ForeignKey(Publisher)
+
+    def __str__(self):
+        return self.title
 
 
